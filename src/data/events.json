@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Jog with Sam",
+    "date": "2025-11-02",
+    "startTime": "06:30",
+    "duration": 45
+  },
+  {
+    "id": 2,
+    "title": "Mom’s Birthday 🎂",
+    "date": "2025-11-03",
+    "startTime": "00:00",
+    "duration": 1440
+  },
+  {
+    "id": 3,
+    "title": "Coffee with Alex ☕",
+    "date": "2025-11-04",
+    "startTime": "10:30",
+    "duration": 60
+  },
+  {
+    "id": 4,
+    "title": "Dentist Appointment",
+    "date": "2025-11-04",
+    "startTime": "15:00",
+    "duration": 30
+  },
+  {
+    "id": 5,
+    "title": "Dinner at Bella Italia 🍝",
+    "date": "2025-11-06",
+    "startTime": "20:00",
+    "duration": 120
+  },
+  {
+    "id": 6,
+    "title": "Yoga Class 🧘‍♀️",
+    "date": "2025-11-07",
+    "startTime": "07:00",
+    "duration": 60
+  },
+  {
+    "id": 7,
+    "title": "Movie Night 🎬",
+    "date": "2025-11-08",
+    "startTime": "21:00",
+    "duration": 150
+  },
+  {
+    "id": 8,
+    "title": "Picnic at Central Park 🌳",
+    "date": "2025-11-09",
+    "startTime": "12:00",
+    "duration": 180
+  },
+  {
+    "id": 9,
+    "title": "Gym Session 💪",
+    "date": "2025-11-10",
+    "startTime": "18:00",
+    "duration": 90
+  },
+  {
+    "id": 10,
+    "title": "Family Lunch 🍲",
+    "date": "2025-11-11",
+    "startTime": "13:00",
+    "duration": 120
+  },
+  {
+    "id": 11,
+    "title": "Weekend Getaway 🏖️",
+    "date": "2025-11-15",
+    "startTime": "09:00",
+    "duration": 720
+  },
+  {
+    "id": 12,
+    "title": "Shopping with Friends 🛍️",
+    "date": "2025-11-16",
+    "startTime": "17:00",
+    "duration": 120
+  },
+  {
+    "id": 13,
+    "title": "Call with Grandma 💬",
+    "date": "2025-11-17",
+    "startTime": "19:30",
+    "duration": 30
+  },
+  {
+    "id": 14,
+    "title": "Bike Ride 🚴‍♂️",
+    "date": "2025-11-18",
+    "startTime": "07:00",
+    "duration": 60
+  },
+  {
+    "id": 15,
+    "title": "Sunday Brunch 🍳",
+    "date": "2025-11-23",
+    "startTime": "11:00",
+    "duration": 90
+  },
+  {
+    "id": 16,
+    "title": "Read a Book 📚",
+    "date": "2025-11-24",
+    "startTime": "20:00",
+    "duration": 60
+  },
+  {
+    "id": 17,
+    "title": "Friends Reunion 🎉",
+    "date": "2025-11-29",
+    "startTime": "19:00",
+    "duration": 240
+  }
+]
+

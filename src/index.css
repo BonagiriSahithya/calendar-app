@@ -1,0 +1,191 @@
+/* === Global Styles === */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: #f7f9fb;
+  color: #0f172a;
+}
+
+.app-header {
+  background: white;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.main {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* === Calendar Container === */
+.calendar {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  width: 100%;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.calendar:hover {
+  transform: translateY(-3px);
+}
+
+/* === Header Navigation === */
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cal-header button {
+  background: #e2e8f0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cal-header button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* === Weekdays === */
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-bottom: 6px;
+}
+
+/* === Days Grid === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.cell {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 110px;
+  transition: background 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cell:hover {
+  background: #f1f5f9;
+}
+
+.cell.muted {
+  opacity: 0.5;
+}
+
+/* === Date number === */
+.day {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.day.today {
+  background: #2563eb;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* === Event Items === */
+.items {
+  flex: 1;
+}
+
+.item {
+  background: #dbeafe;
+  border-left: 4px solid #2563eb;
+  margin: 4px 0;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: background 0.2s ease;
+}
+
+.item:hover {
+  background: #bfdbfe;
+}
+
+.item.conflict {
+  background: #fee2e2;
+  border-left-color: #ef4444;
+}
+
+.time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.evtitle {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* === Expand More Button === */
+.more {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  transition: color 0.2s ease;
+}
+
+.more:hover {
+  color: #1d4ed8;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .calendar {
+    padding: 16px;
+  }
+
+  .cell {
+    min-height: 90px;
+    padding: 6px;
+  }
+
+  .weekdays div {
+    font-size: 0.85rem;
+  }
+}
+
+
