@@ -105,7 +105,7 @@ Live Link:
 
 ---
 
-### 🧠 Author
+### 
 
 👩‍💻 **Bonagiri Sahithya**
 Front-End Developer | React Enthusiast
