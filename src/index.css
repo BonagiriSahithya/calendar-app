@@ -2,18 +2,32 @@
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  background: #f7f9fb;
+  background: linear-gradient(120deg, #e0f2fe, #fef9c3, #f5f3ff);
   color: #0f172a;
+  min-height: 100vh;
+  transition: background 0.5s ease-in-out;
 }
 
 .app-header {
-  background: white;
-  padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
+  background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+  color: white;
+  padding: 30px;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.app-header .sub {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 .main {
@@ -26,16 +40,18 @@ body {
 /* === Calendar Container === */
 .calendar {
   background: white;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 28px;
   width: 100%;
-  max-width: 900px;
+  max-width: 950px;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .calendar:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  border-color: #93c5fd;
 }
 
 /* === Header Navigation === */
@@ -43,26 +59,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  font-size: 1.25rem;
-  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: #1e293b;
 }
 
 .cal-header button {
-  background: #e2e8f0;
+  background: linear-gradient(135deg, #93c5fd, #3b82f6);
   border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: #334155;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-weight: 600;
 }
 
 .cal-header button:hover {
-  background: #2563eb;
-  color: white;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: scale(1.05);
 }
 
 /* === Weekdays === */
@@ -70,52 +87,61 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  font-weight: 600;
-  color: #475569;
-  background: #f1f5f9;
-  border-radius: 8px;
-  padding: 8px 0;
-  margin-bottom: 6px;
+  font-weight: 700;
+  color: #334155;
+  background: #eff6ff;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 /* === Days Grid === */
 .grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
+  gap: 8px;
 }
 
 .cell {
-  background: #f9fafb;
-  border-radius: 8px;
-  padding: 8px;
-  min-height: 110px;
-  transition: background 0.2s ease;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 120px;
+  transition: background 0.25s ease, transform 0.25s ease;
   display: flex;
   flex-direction: column;
+  border: 1px solid #e2e8f0;
+  position: relative;
 }
 
 .cell:hover {
   background: #f1f5f9;
+  transform: translateY(-2px);
+  border-color: #bfdbfe;
 }
 
 .cell.muted {
   opacity: 0.5;
 }
 
-/* === Date number === */
+/* === Date Number === */
 .day {
   font-weight: 600;
   color: #0f172a;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
 .day.today {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
   color: white;
-  padding: 4px 8px;
-  border-radius: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
   display: inline-block;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
 }
 
 /* === Event Items === */
@@ -124,36 +150,38 @@ body {
 }
 
 .item {
-  background: #dbeafe;
+  background: linear-gradient(90deg, #e0f2fe, #f0f9ff);
   border-left: 4px solid #2563eb;
   margin: 4px 0;
-  padding: 5px 8px;
+  padding: 6px 10px;
   border-radius: 6px;
   font-size: 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  transition: background 0.2s ease;
+  gap: 3px;
+  transition: all 0.2s ease;
 }
 
 .item:hover {
-  background: #bfdbfe;
+  background: #dbeafe;
+  transform: scale(1.02);
 }
 
 .item.conflict {
-  background: #fee2e2;
+  background: linear-gradient(90deg, #fee2e2, #fef2f2);
   border-left-color: #ef4444;
 }
 
 .time {
   font-size: 0.75rem;
-  font-weight: 600;
-  color: #334155;
+  font-weight: 700;
+  color: #1e3a8a;
 }
 
 .evtitle {
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
 }
 
 /* === Expand More Button === */
@@ -161,21 +189,38 @@ body {
   background: none;
   border: none;
   color: #2563eb;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  font-size: 0.85rem;
-  margin-top: 4px;
-  transition: color 0.2s ease;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .more:hover {
   color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 16px;
+  margin-top: 40px;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.footer small {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 /* === Responsive === */
 @media (max-width: 768px) {
   .calendar {
-    padding: 16px;
+    padding: 18px;
   }
 
   .cell {
@@ -184,8 +229,6 @@ body {
   }
 
   .weekdays div {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
-
-
