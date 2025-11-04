@@ -1,4 +1,3 @@
-Here’s a clean and professional **README.md** file you can include in your GitHub repo for your **Calendar App** project 👇
 
 ---
 
