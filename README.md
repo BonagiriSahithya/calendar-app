@@ -15,14 +15,14 @@ A **modern, user-friendly calendar web application** built with **React** and **
 
 ### 🧩 Features
 
-✅ Displays the **current month** and **year** by default
-✅ Navigate between **previous** and **next months**
-✅ Highlights the **current date**
-✅ Loads **static event data** from a JSON file
-✅ Shows **events with start time, duration, and title**
-✅ Handles **conflicting events** (color-coded in red)
-✅ Responsive and clean **UI using CSS**
-✅ Built with **React + Vite** for speed and simplicity
+- ✅ Displays the current month and year by default
+- ✅ Navigate between previous and next months
+- ✅ Highlights the current date
+- ✅ Loads static event data from a JSON file
+- ✅ Shows events with start time, duration, and title
+- ✅ Handles conflicting events (color-coded in red)
+- ✅ Responsive and clean UI using CSS
+- ✅ Built with React + Vite for speed and simplicity
 
 ---
 
